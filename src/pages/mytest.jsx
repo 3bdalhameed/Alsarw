@@ -4,6 +4,7 @@ import { HiMenu } from 'react-icons/hi';
 import { motion } from 'framer-motion';
 import logo from './img/alsarw.png';
 import "./mytest.css";
+import { Analytics } from "@vercel/analytics/react"
 
 export default function MarketingWebsite() {
   const [navOpen, setNavOpen] = useState(false);
@@ -15,7 +16,7 @@ export default function MarketingWebsite() {
 
   return (
 <div className="font-[Poppins] text-[#0e2431] relative overflow-x-hidden bg-white">
-
+<Analytics />
 {/* Header */}
 <header className="fixed top-0 left-0 w-full z-50 bg-white/90 backdrop-blur-md shadow-md border-b border-gray-200 transition-all duration-300">
   <nav className="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
@@ -214,7 +215,7 @@ export default function MarketingWebsite() {
             📞 <span className="font-semibold">Phone:</span> +962 7 9577 9911
           </p>
           <p className='text-4xl'>
-            📧 <span className="font-semibold">Email:</span> ALSARWLLC@OUTLOOK.COM
+            📧 <span className="font-semibold">Email:</span> alsarwllc@outlook.com
           </p>
         </motion.div>
       </section>
