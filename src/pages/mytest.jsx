@@ -200,7 +200,6 @@ export default function MarketingWebsite() {
           </div>
         </section>
 
-
       {/* Contact Section */}
       <section id="contact" className="py-20 px-6 md:px-20 bg-white text-center">
         <h2 className="text-5xl font-bold text-[#0000fc] mb-10">Get in Touch</h2>
@@ -209,23 +208,35 @@ export default function MarketingWebsite() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1.2 }}
-          className="text-lg text-[#0e2431] space-y-4"
+          className="text-lg text-[#0e2431] space-y-6"
         >
-          <p className='text-4xl'>
-            📞 <span className="font-semibold">Phone:</span> +962 7 9577 9911
+          <p className="text-3xl md:text-4xl">
+            📞 <span className="font-semibold">Phone:</span>{' '}
+            <a href="tel:+962795779911" className="text-[#0000fc] hover:underline">
+              +962 7 9577 9911
+            </a>
           </p>
-          <p className='text-4xl'>
-            📧 <span className="font-semibold">Email:</span> alsarwllc@outlook.com
+          <p className="text-3xl md:text-4xl">
+            📧 <span className="font-semibold">Email:</span>{' '}
+            <a href="mailto:alsarwllc@outlook.com" className="text-[#0000fc] hover:underline">
+              alsarwllc@outlook.com
+            </a>
           </p>
         </motion.div>
       </section>
       </main>
 
+      {/* Footer */}
       <footer className="bg-[#0e2431] text-white text-center py-10">
         <h3 className="text-2xl font-bold mb-4">ALSARW</h3>
-        <div className="flex justify-center gap-6 text-xl mb-6">
-        </div>
-        <p>&copy; 2025 ALSARW. All rights reserved.</p>
+
+        {/* Optional Socials placeholder */}
+         <div className="flex justify-center gap-6 text-xl mb-6">
+          <a href="#" className="hover:text-[#d9de22]">Facebook</a>
+          <a href="#" className="hover:text-[#d9de22]">Instagram</a>
+        </div> 
+
+        <p className="text-sm">&copy; 2025 ALSARW. All rights reserved.</p>
       </footer>
     </div>
   );
