@@ -22,8 +22,7 @@ export default function MarketingWebsite() {
 <header className="fixed top-0 left-0 w-full z-50 bg-white/90 backdrop-blur-md shadow-md border-b border-gray-200 transition-all duration-300">
   <nav className="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
     <a href="#" className="flex items-center gap-3 text-2xl font-black text-[#d9de22] tracking-wide hover:opacity-90 transition">
-      <img src={logo} className="w-14 h-14" alt="Logo" />
-      ALSARW
+      <img src={logo} className="w-18 h-14" alt="Logo" />
     </a>
 
     {/* Mobile Menu Button */}
@@ -78,7 +77,7 @@ export default function MarketingWebsite() {
         transition={{ duration: 1 }}
         className="text-5xl md:text-7xl font-extrabold leading-tight mb-6 text-[#0e2431]"
       >
-        Empower Your E-Commerce <br />
+        Empower Your E-Marketing <br />
         <span className="text-[#0000fc]">with ALSARW</span>
       </motion.h1>
 
@@ -121,18 +120,18 @@ export default function MarketingWebsite() {
     <div className="grid md:grid-cols-3 gap-10 max-w-6xl mx-auto">
       {[
         {
-          title: "Store Optimization",
-          desc: "Enhance user experience and boost conversion with fast-loading, intuitive store designs.",
+          title: "Marketing",
+          desc: "Boost visibility and engagement with precision-crafted marketing campaigns.",
           icon: "🛒",
         },
         {
-          title: "Marketing Automation",
-          desc: "Automate email, SMS, and push notifications to engage your customers at every step.",
+          title: "business consulting",
+          desc: "Optimize operations, elevate performance, and outpace the competition.",
           icon: "⚙️",
         },
         {
-          title: "Product SEO",
-          desc: "Optimize your product listings to rank higher on Google, Amazon, and other marketplaces.",
+          title: "E-Eommerce",
+          desc: "Maximize customer lifetime value through intuitive design and smart automation.",
           icon: "🚀",
         },
       ].map((service, index) => (
@@ -232,10 +231,10 @@ export default function MarketingWebsite() {
         <h3 className="text-2xl font-bold mb-4">ALSARW</h3>
 
         {/* Optional Socials placeholder */}
-         <div className="flex justify-center gap-6 text-xl mb-6">
+        {/* <div className="flex justify-center gap-6 text-xl mb-6">
           <a href="#" className="hover:text-[#d9de22]">Facebook</a>
           <a href="#" className="hover:text-[#d9de22]">Instagram</a>
-        </div> 
+            </div> */}
 
         <p className="text-sm">&copy; 2025 ALSARW. All rights reserved.</p>
       </footer>
