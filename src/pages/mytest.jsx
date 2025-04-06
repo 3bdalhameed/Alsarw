@@ -13,7 +13,7 @@ export default function MarketingWebsite() {
 
 
 
-  const navItems = ["home", "services", "about", "testimonials", "contact"];
+  const navItems = ["home", "services", "about"];
 
   return (
 <div className="font-[Poppins] text-[#0e2431] relative overflow-x-hidden bg-white">
