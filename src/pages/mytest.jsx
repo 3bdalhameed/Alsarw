@@ -180,23 +180,26 @@ export default function MarketingWebsite() {
             animate={{ opacity: 1 }}
             transition={{ duration: 1.2 }}
             className="text-lg text-[#0e2431] space-y-6"
-          >
-            <p className="text-3xl md:text-4xl">
+          >            
+            <p className="text-xl md:text-3xl mt-10 text-[#1e3a5f]">
+             🕛 Founded in<span className="text-[#0000fc] font-semibold">  2024 </span>
+             </p>
+             <p className="text-xl md:text-3xl mt-10 text-[#1e3a5f]">
+             📍 Based in<span className="text-[#0000fc] font-semibold"> Amman, Jordan</span>
+            </p>
+            <p className="text-2xl md:text-4xl">
               📞 <span className="font-semibold">Phone:</span>{' '}
               <a href="tel:+962795779911" className="text-[#0000fc] hover:underline">
                 +962 7 9577 9911
               </a>
             </p>
-            <p className="text-3xl md:text-4xl">
+            <p className="text-2xl md:text-4xl">
               📧 <span className="font-semibold">Email:</span>{' '}
               <a href="mailto:alsarwllc@outlook.com" className="text-[#0000fc] hover:underline">
                 alsarwllc@outlook.com
               </a>
             </p>
-            <p className="text-xl md:text-3xl mt-10 text-[#1e3a5f]">
-             🕛 Founded in<span className="text-[#0000fc] font-semibold">  2024 </span>
-             📍 Based in<span className="text-[#0000fc] font-semibold"> Amman, Jordan</span>
-            </p>
+
           </motion.div>
         </section>
 
