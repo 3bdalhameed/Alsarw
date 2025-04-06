@@ -55,49 +55,50 @@ export default function MarketingWebsite() {
   </nav>
 </header>
 
-<main className="pt-20">
-  {/* Hero Section */}
-  <motion.section
-    id="home"
-    initial={{ opacity: 0 }}
-    animate={{ opacity: 1 }}
-    transition={{ duration: 1.5 }}
-    className="min-h-screen flex flex-col items-center justify-center px-6 md:px-20 text-center relative overflow-hidden bg-gradient-to-br from-white via-[#f0f8ff] to-[#e8f0ff]"
-  >
-    {/* Decorative Animated Blobs */}
-    <div className="absolute top-[-80px] left-[-60px] w-[300px] h-[300px] bg-[#d9de22]/30 rounded-full blur-3xl animate-blob animation-delay-2000 z-0" />
-    <div className="absolute bottom-[-100px] right-[-60px] w-[300px] h-[300px] bg-[#00c6ff]/30 rounded-full blur-3xl animate-blob z-0" />
-    <div className="absolute top-[40%] left-1/2 transform -translate-x-1/2 w-[200px] h-[200px] bg-[#0000fc]/10 rounded-full blur-2xl animate-blob animation-delay-4000 z-0" />
+  <main className="pt-20">
+    {/* Hero Section */}
+    <motion.section
+      id="home"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1.5 }}
+      className="min-h-screen flex flex-col items-center justify-center px-6 md:px-20 text-center relative overflow-hidden bg-gradient-to-br from-white via-[#f0f8ff] to-[#e8f0ff]"
+    >
+      {/* Decorative Animated Blobs */}
+      <div className="absolute top-[-80px] left-[-60px] w-[300px] h-[300px] bg-[#d9de22]/30 rounded-full blur-3xl animate-blob animation-delay-2000 z-0" />
+      <div className="absolute bottom-[-100px] right-[-60px] w-[300px] h-[300px] bg-[#00c6ff]/30 rounded-full blur-3xl animate-blob z-0" />
+      <div className="absolute top-[40%] left-1/2 transform -translate-x-1/2 w-[200px] h-[200px] bg-[#0000fc]/10 rounded-full blur-2xl animate-blob animation-delay-4000 z-0" />
 
-    {/* Main Content */}
-    <div className="z-10">
-      <motion.h1
-        initial={{ y: -50 }}
-        animate={{ y: 0 }}
-        transition={{ duration: 1 }}
-        className="text-5xl md:text-7xl font-extrabold leading-tight mb-6 text-[#0e2431]"
-      >
-        Empower Your E-Marketing <br />
-        <span className="text-[#0000fc]">with ALSARW</span>
-      </motion.h1>
+      {/* Main Content */}
+      <div className="z-10">
+        <motion.h1
+          initial={{ y: -50 }}
+          animate={{ y: 0 }}
+          transition={{ duration: 1 }}
+          className="text-5xl md:text-7xl font-extrabold leading-tight mb-6 text-[#0e2431]"
+        >
+          Empower Your Digital Success <br />
+          <span className="text-[#0000fc]">with ALSARW</span>
+        </motion.h1>
 
-      <motion.p
-        initial={{ y: 50 }}
-        animate={{ y: 0 }}
-        transition={{ duration: 1.2 }}
-        className="mb-8 max-w-2xl text-lg md:text-xl text-[#1e3a5f] mx-auto"
-      >
-        Specialized digital services to boost your online store's visibility, conversions, and customer loyalty through data-driven marketing and automation tools.
-      </motion.p>
+        <motion.p
+          initial={{ y: 50 }}
+          animate={{ y: 0 }}
+          transition={{ duration: 1.2 }}
+          className="mb-6 max-w-2xl text-lg md:text-xl text-[#1e3a5f] mx-auto"
+        >
+          Specialized digital solutions to elevate your business—from marketing and branding to strategic automation and performance analytics.
+        </motion.p>
 
-      <motion.a
-        href="#contact"
-        whileHover={{ scale: 1.05 }}
-        className="bg-gradient-to-r from-[#d9de22] to-[#00c6ff] text-white px-10 py-4 rounded-full font-semibold hover:shadow-2xl transition duration-300"
-      >
-        Let's Talk 💬
-      </motion.a>
-    </div>
+        <motion.a
+          href="#contact"
+          whileHover={{ scale: 1.05 }}
+          className="bg-gradient-to-r from-[#d9de22] to-[#00c6ff] text-white px-10 py-4 rounded-full font-semibold hover:shadow-2xl transition duration-300"
+        >
+          Let's Talk 💬
+        </motion.a>
+      </div>
+
 
     {/* SVG Wave to transition into Services */}
     <svg
@@ -169,61 +170,36 @@ export default function MarketingWebsite() {
   </motion.div>
 </section>
 
-        {/* Testimonials */}
-        <section id="testimonials" className="py-24 bg-[#f9f9f9] px-6 md:px-20 text-center">
-          <h2 className="text-4xl font-bold text-[#0000fc] mb-14">Client Success Stories</h2>
 
-          <div className="grid md:grid-cols-2 gap-10 max-w-5xl mx-auto">
-            {[
-              {
-                name: "Layla M.",
-                feedback: "ALSARW helped us double our Shopify revenue within two quarters.",
-              },
-              {
-                name: "Omar K.",
-                feedback: "Their automation tools changed the way we manage marketing.",
-              },
-            ].map((testimony, index) => (
-              <motion.div
-                key={index}
-                whileHover={{ y: -5, scale: 1.02 }}
-                transition={{ duration: 0.3 }}
-                className="bg-white p-8 rounded-2xl shadow-lg text-left relative"
-              >
-                <div className="text-5xl text-[#d9de22] mb-4">“</div>
-                <p className="italic text-lg text-[#0e2431] leading-relaxed mb-6">
-                  {testimony.feedback}
-                </p>
-                <h4 className="font-semibold text-[#0e2431]">– {testimony.name}</h4>
-              </motion.div>
-            ))}
-          </div>
+        {/* Contact Section */}
+        <section id="contact" className="py-20 px-6 md:px-20 bg-[#f9f9f9] text-center">
+          <h2 className="text-5xl font-bold text-[#0000fc] mb-10">Get in Touch</h2>
+
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1.2 }}
+            className="text-lg text-[#0e2431] space-y-6"
+          >
+            <p className="text-3xl md:text-4xl">
+              📞 <span className="font-semibold">Phone:</span>{' '}
+              <a href="tel:+962795779911" className="text-[#0000fc] hover:underline">
+                +962 7 9577 9911
+              </a>
+            </p>
+            <p className="text-3xl md:text-4xl">
+              📧 <span className="font-semibold">Email:</span>{' '}
+              <a href="mailto:alsarwllc@outlook.com" className="text-[#0000fc] hover:underline">
+                alsarwllc@outlook.com
+              </a>
+            </p>
+            <p className="text-xl md:text-3xl mt-10 text-[#1e3a5f]">
+             🕛 Founded in<span className="text-[#0000fc] font-semibold">  2024 </span>
+             📍 Based in<span className="text-[#0000fc] font-semibold"> Amman, Jordan</span>
+            </p>
+          </motion.div>
         </section>
 
-      {/* Contact Section */}
-      <section id="contact" className="py-20 px-6 md:px-20 bg-white text-center">
-        <h2 className="text-5xl font-bold text-[#0000fc] mb-10">Get in Touch</h2>
-
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1.2 }}
-          className="text-lg text-[#0e2431] space-y-6"
-        >
-          <p className="text-3xl md:text-4xl">
-            📞 <span className="font-semibold">Phone:</span>{' '}
-            <a href="tel:+962795779911" className="text-[#0000fc] hover:underline">
-              +962 7 9577 9911
-            </a>
-          </p>
-          <p className="text-3xl md:text-4xl">
-            📧 <span className="font-semibold">Email:</span>{' '}
-            <a href="mailto:alsarwllc@outlook.com" className="text-[#0000fc] hover:underline">
-              alsarwllc@outlook.com
-            </a>
-          </p>
-        </motion.div>
-      </section>
       </main>
 
       {/* Footer */}
