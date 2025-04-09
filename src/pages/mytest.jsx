@@ -131,7 +131,7 @@ export default function MarketingWebsite() {
           icon: "⚙️",
         },
         {
-          title: "E-Eommerce",
+          title: "E-Commerce",
           desc: "Maximize customer lifetime value through intuitive design and smart automation.",
           icon: "🚀",
         },
